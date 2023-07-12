@@ -1,0 +1,41 @@
+Goal: Build an app that determines the best region for new heardquarters
+  - want to build in an area where the fish are low in calories and fat
+
+API: https://github.com/theabr-org/coding-challenge-server
+  - 
+
+Reqs:
+  - Fetch data from the code challenge server
+  - NAV BAR with links to each page
+  - HOME PAGE contains
+    - list of each NOAAFisheriesRegion from the data set
+      - each must show the average calories and fat per serving for fish in the region
+  - Page for each region containing
+    - Name of the region
+    - Average calories and fat/serving for fish in that region
+    - List of fish from the region
+      - Name of fish
+      - Image
+      - calories and fat / serving
+      - description text
+
+
+Tasks: 
+✔ 1. Play with the api and see what kind of data we're getting 
+2. Get basic structure set up
+  - Get nav bar working 
+  - come back to this later to make it look nice
+✔ 3. Make API call on home page
+✔  - think about whether we can just pass this info down to the other pages or if we should make api calls for each page
+4. Create components
+  - Average calories and fat component
+    - Will take a list of fish and calculate the average calories and fat and return it in a presentable manner
+  - Fish Table component
+    - Will take a list of fish and map them to components which have the name/image/nutrition/description info
+5. ?? if finished with above re-evaluate
+
+API response processing:
+1. Make the api call
+2. We need the fisheries separated by region so go through api response adding all regions to a set
+  - For this challenge there will only be a set amount of regions but thinking for the future might be nice to dynamically make
+  the nav bar etc
