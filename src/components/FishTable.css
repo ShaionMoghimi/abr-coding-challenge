@@ -1,0 +1,20 @@
+img {
+  max-width: 200px;
+  max-height: 150px;
+}
+
+.desc {
+  margin-left: 1rem;
+}
+
+.table { 
+  width: 75%;
+}
+
+.flex {
+  display: flex;
+}
+
+.border-b {
+  border-bottom: solid lightgray 2px;
+}
